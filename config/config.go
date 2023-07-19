@@ -6,8 +6,8 @@ import(
 
 func ConnectDb() *sql.DB{
 	dbDriver := "mysql"
-	dbUser := "root"
-	dbPass := "gonzo"
+	dbUser := "your_username"
+	dbPass := "your_password"
 	dbName := "orders"
 
 	db, err := sql.Open(dbDriver, dbUser+":"+dbPass+"@/"+dbName)
